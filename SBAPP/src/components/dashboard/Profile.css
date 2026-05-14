@@ -1,0 +1,51 @@
+.profile-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+max-width:800px;
+}
+
+.profile-box h2{
+margin-bottom:20px;
+}
+
+.profile-box label{
+display:block;
+margin-top:15px;
+font-weight:500;
+}
+
+.profile-box input{
+width:100%;
+padding:10px;
+margin-top:5px;
+border:1px solid #ddd;
+border-radius:6px;
+}
+
+.update-btn{
+margin-top:25px;
+width:100%;
+padding:12px;
+background:#5fa88a;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.update-btn:hover{
+background:#4a8f74;
+}
+.pass-box{
+  display:flex;
+  gap:10px;
+  align-items:center;
+}
+
+.pass-box button{
+  padding:5px 10px;
+  cursor:pointer;
+}

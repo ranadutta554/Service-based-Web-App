@@ -1,0 +1,259 @@
+/* ROOT BACKGROUND (Premium Gradient) */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: 'Inter', sans-serif;
+  color: #1e293b;
+}
+
+/* MAIN */
+.main-section {
+  flex: 1;
+  padding: 25px;
+}
+
+.body-content {
+  margin-top: 20px;
+}
+
+/* 🔥 GLASS HEADER */
+.service-header-3d {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  transition: all 0.3s ease;
+}
+
+.service-header-3d:hover {
+  transform: translateY(-3px);
+}
+
+/* TEXT */
+.header-left h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.header-left span {
+  color: #6366f1;
+}
+
+/* SEARCH */
+.search-input {
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+
+  background: white;
+  outline: none;
+  margin-right: 10px;
+
+  transition: 0.2s;
+}
+
+.search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+}
+
+/* BUTTON */
+.add-btn-3d {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 500;
+
+  transition: all 0.3s;
+}
+
+.add-btn-3d:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(99,102,241,0.4);
+}
+
+/* TABLE CONTAINER */
+.table-container-3d {
+  margin-top: 20px;
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+.service-table-modern {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* HEADER */
+.service-table-modern th {
+  text-align: left;
+  padding: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  background: rgba(241,245,249,0.8);
+  color: #64748b;
+}
+
+/* CELLS */
+.service-table-modern td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* ROW HOVER */
+.service-row {
+  transition: all 0.25s ease;
+}
+
+.service-row:hover {
+  background: rgba(99,102,241,0.06);
+  transform: scale(1.005);
+}
+
+/* IMAGE */
+.img-frame {
+  width: 80px;
+  height: 60px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* NAME */
+.s-name {
+  font-weight: 600;
+}
+
+.s-id {
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* TAG */
+.type-tag {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #6366f1;
+  color: white;
+  font-size: 12px;
+}
+
+/* LOCATION */
+.loc-text {
+  color: #475569;
+}
+
+/* PRICE */
+.price-text {
+  font-weight: 600;
+  color: #16a34a;
+}
+
+/* STATUS */
+.status-pill {
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-pill.active {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-pill.pending {
+  background: #fef9c3;
+  color: #854d0e;
+}
+
+/* DELETE BUTTON */
+.delete-btn-3d {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+
+  background: #ef4444;
+  color: white;
+
+  transition: all 0.3s;
+}
+
+.delete-btn-3d:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(239,68,68,0.4);
+}
+
+/* EMPTY */
+.empty-msg {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+}
+
+/* LOADER */
+.loader-text {
+  text-align: center;
+  padding: 20px;
+}
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edit-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.edit-box input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.edit-btn-3d {
+  background: #3b82f6;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 5px;
+}

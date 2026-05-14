@@ -1,0 +1,314 @@
+/* Modern UI Variables */
+:root {
+  --primary: #2563eb;
+  --primary-light: #eff6ff;
+  --success: #10b981;
+  --danger: #ef4444;
+  --white: #ffffff;
+  --text-dark: #0f172a;
+  --text-muted: #64748b;
+  --bg-soft: #f8fafc;
+  --border-color: #e2e8f0;
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+.booking-layout {
+  background-color: var(--bg-soft);
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', -apple-system, sans-serif;
+}
+
+.booking-container {
+  width: 100%;
+  max-width: 1050px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Glassmorphic Card Style */
+.booking-main {
+  background: var(--white);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--white);
+}
+
+/* Modern Stepper */
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  background: var(--bg-soft);
+  width: fit-content;
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+}
+
+.step-item {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.step-item.active {
+  color: var(--primary);
+}
+
+.step-sep {
+  color: var(--border-color);
+  font-size: 1rem;
+}
+
+/* Form Styling */
+.booking-main h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.input-group {
+  margin-bottom: 24px;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.input-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  transition: all 0.25s ease;
+  background: #fff;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+textarea {
+  min-height: 120px;
+  line-height: 1.6;
+}
+
+/* Action Buttons */
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  padding: 16px 28px;
+  border-radius: var(--radius-md);
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(37, 99, 235, 0.5);
+}
+
+.ghost-btn {
+  background: var(--bg-soft);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.ghost-btn:hover {
+  background: var(--border-color);
+}
+
+.button-group {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* Sidebar Service Card */
+.booking-sidebar {
+  position: sticky;
+  top: 40px;
+}
+
+.service-card-mini {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+}
+
+.service-card-mini img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.mini-details {
+  padding: 24px;
+}
+
+.mini-details h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.price-tag {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--primary);
+  margin-bottom: 15px;
+}
+
+.secure-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--success);
+  background: #ecfdf5;
+  padding: 6px 12px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+/* Success Screen Animation */
+.success-screen {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.success-icon {
+  font-size: 5rem;
+  color: var(--success);
+  margin-bottom: 20px;
+  animation: bounceIn 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); opacity: 1; }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+.form-fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom Error Banner */
+.error-banner {
+  background: #fff1f2;
+  border: 1px solid #fda4af;
+  color: var(--danger);
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .booking-container {
+    grid-template-columns: 1fr;
+  }
+  .booking-sidebar {
+    order: -1;
+    position: static;
+  }
+  .input-row {
+    grid-template-columns: 1fr;
+  }
+}
+/* Force dark text everywhere */
+body {
+  color: var(--text-dark);
+}
+
+/* Inputs text fix */
+input, textarea {
+  color: var(--text-dark);
+}
+
+/* Placeholder text */
+input::placeholder,
+textarea::placeholder {
+  color: var(--text-muted);
+}
+
+/* Buttons text (keep primary white, others dark) */
+.primary-btn {
+  color: #fff; /* keep this */
+}
+
+.ghost-btn {
+  color: var(--text-dark);
+}
+
+/* Fix any accidental white text */
+.booking-main,
+.mini-details,
+.service-card-mini,
+.stepper,
+.input-group,
+.button-group {
+  color: var(--text-dark);
+}
