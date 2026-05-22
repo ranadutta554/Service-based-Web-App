@@ -63,7 +63,7 @@ Session / Token-based Authentication
 VS Code
 
 
-IntelliJ IDEA / Eclipse
+Eclipse
 
 
 Postman
